@@ -21,10 +21,12 @@ WHEN the game is over
 THEN I can save my initials and score.
 
 Features used in this project:
-
 HTML
 CSS
 JavaScript
 Bootstrap
+
+
+By Nehaila ♥️
 
 

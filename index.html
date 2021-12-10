@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <a href="#" id="highscores">View High Scores 🎉</a>
+        </div>
+
+        <div id="temps" class="col text-right">
+            <i class="far fa-clock fa-7x"></i><span id="timeRemaining">Time: 0</span>
+        </div>
+        <div id="timeIsUp" class="col text-right" style="display: none;">Time is Up!</div>
+    </div>
+
+    <div id="introduction" class="row text-left">
+        <div class="col-md-2"></div>
+        <main class="col-md-8 mt-5">
+
+            <div id="begin" class="m-2 justify-content-center">
+                <h1 class="font-weight-bold pl-5 pr-5">Coding Quiz Memory check</h1>
+                <p class="p-5">Do you want see how much you know
+                    about the world of coding!<br />
+                    Then take our JavaScript fundamentals! Try to answer the followding
+                    code-related questions within the time limit. </p>
+                    <img src="Assets/Images/getty_506910700_160576.jpeg" alt="I Can Do It Motivational Picture" />
+                <button type="button" id="begin-quiz" class="btn btn-info ml-5 align-center">Start Quiz</button>
+            </div>
+
+            <div id="questionPourToi" style="display: none;">
+                <p id="questionTitre" class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold"></p>
+                <div class="pl-5 pt-2 pb-3 m-2 justify-content-center">
+                    <p><button id="btnNumero0" class="btn btn-dark"></button></p>
+                    <p><button id="btnNumero1" class="btn btn-dark"></button></p>
+                    <p><button id="btnNumero2" class="btn btn-dark"></button></p>
+                    <p><button id="btnNumero3" class="btn btn-dark"></button></p>
+                    <hr id="line" style="display: none" class="mt-4">
+                    <p id="rightAnswerCheck" style="display: none;"></p>
+                </div>
+            </div>
+
+            <div class="pl-5 ml-2 pt-5 justify-content-center font-weight-bold" id="conclusion" style="display: none;">
+                <div class="col-2"></div>
+                <div class="col-8 text-left">
+                    <h2 class="font-weight-bold pt-2 pb-3 m-2">Your final score is <span id="finalScoreresults"></span>
+                        !
+                    </h2>
+                    <form>
+                        <p class="pt-2 pb-3 m-2">Please Enter Your Initials:
+                            <input id="initialInfo" class="form-control pt-2 pb-3 mt-2" type="text">
+                            <button type="submit" id="initialBtn" class="btn btn-info mt-3">Submit</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="col-2"></div>
+            </div>
+
+            <div id="highScoresDiv" class="pl-5 ml-4 pt-5 justify-content-center font-weight-bold"
+                style="display: none;">
+                <h2 class="font-weight-bold pt-2 pb-3 mb-2">High Scores</h2>
+
+                <div id="highScoresGroup" class="list-group list-group-flush pt-2 pb-3 mb-2"></div>
+
+                <p>
+                    <button type="submit" class="btn btn-info mt-3 mr-3" id="previousBtn">Go Back</button>
+                    <button type="submit" class="btn btn-info mt-3" id="clearHighScoresBtn">Clear High Scores</button>
+                </p>
+
+            </div>
+        </main>
+        <div class="col-md-2"></div>
+    </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script src="Assets/script.js"></script>
+    <script src="https://kit.fontawesome.com/1d37754851.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

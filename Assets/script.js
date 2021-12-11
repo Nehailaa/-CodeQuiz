@@ -155,7 +155,7 @@ function checkAnswer(answer) {
         rightAnswerCheck.textContent = "Incorrect! The correct answer is: " + questions[questionsIndex].answer;
     }
 
-    questionsIndex++;
+    questionsIndex++; // add timeout  *highscore go down*
     // repeat using If & Else Statements
     if (questionsIndex < questions.length) {
         nextQuestion();
@@ -173,7 +173,7 @@ function chooseC() { checkAnswer(2); }
 
 function chooseD() { checkAnswer(3); }
 
-// when all questions are answered || timer reaches 0, game is over
+// when all questions are answered || timer reaches 0, 
 function gameOver() {
     conclusion.style.display = "block";
     questionPourToiDiv.style.display = "none";

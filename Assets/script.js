@@ -173,7 +173,7 @@ function chooseC() { checkAnswer(2); }
 
 function chooseD() { checkAnswer(3); }
 
-// when all questions are answered || timer reaches 0, 
+// when all questions are answered || timer reaches 0, game is over
 function gameOver() {
     conclusion.style.display = "block";
     questionPourToiDiv.style.display = "none";
